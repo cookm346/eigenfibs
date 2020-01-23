@@ -563,7 +563,7 @@ a &lt;- matrix(c(0, 1,
 #compute eigen vectors and values
 eig &lt;- eigen(a)
 
-#compute the n+1th and n+2th Fibonacci numbers
+#compute the 51st and 52nd Fibonacci numbers
 eig$vectors %*% diag(eig$values^50) %*% solve(eig$vectors) %*% c(0, 1)</code></pre>
 <pre><code>##             [,1]
 ## [1,] 12586269025
