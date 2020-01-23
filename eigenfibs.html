@@ -401,7 +401,7 @@ summary {
 1
 \end{bmatrix}\]</span></p>
 <p>First, the sum of these two numbers 0 + 1 = 1 appears as the second element in our new vector. This is useful because this is the next number in our sequence.</p>
-<p>Second, a 1 also appears as our first element in our new vector. This is useful because our vector now has 1 and 1 (the second and third Fibonacci numbers), which allows us to repeat the process to produce the next number in the sequence:</p>
+<p>Second, a 1 also appears as our first element in our new vector. This is useful because our vector now has 1 and 1 (the second and third Fibonacci numbers), which allows us to multiply this new vector by <strong>A</strong> to produce the next number in the sequence:</p>
 <p><span class="math display">\[\begin{bmatrix}
 0 &amp; 1\\
 1 &amp; 1
@@ -412,7 +412,7 @@ summary {
 1\\
 2
 \end{bmatrix}\]</span></p>
-<p>Which we can repeat a third time:</p>
+<p>Again, we can take this new vector and multiply it by <strong>A</strong> to get the next number in the sequence:</p>
 <p><span class="math display">\[\begin{bmatrix}
 0 &amp; 1\\
 1 &amp; 1
@@ -465,6 +465,7 @@ summary {
 12586269025\\
 20365011074
 \end{bmatrix}\]</span></p>
+<p>However, this is a lot of multiplication (50 matrix multiplications)!</p>
 <p><br></p>
 </div>
 <div id="using-the-eigendecomposition-of-a-matrix-to-compute-matrix-powers" class="section level2">
@@ -502,7 +503,7 @@ summary {
 0.5257311 &amp; 0.8506508\\
 -0.8506508 &amp; 0.5257311
 \end{bmatrix}\]</span></p>
-<p>Importantly, the powers of the diagonal matrix <span class="math inline">\(\Lambda\)</span> are easily computed by simply computing the powers of the number in the diagonals (e.g., 1.618034<sup>50</sup> and -0.618034<sup>50</sup>)</p>
+<p>Importantly, the powers of the diagonal matrix <span class="math inline">\(\Lambda\)</span> are easily computed by simply computing the powers of the number in the diagonals (e.g., 1.618034<sup>50</sup> and -0.618034<sup>50</sup>). This allows us to compute any power of a matrix with just three matrix multiplications!</p>
 <p><br></p>
 </div>
 <div id="applying-the-eigendecomposition-to-generate-any-fibonacci-number" class="section level2">
@@ -549,7 +550,7 @@ fib^{52}
 </div>
 <div id="importance" class="section level2">
 <h2>Importance</h2>
-<p>Matrices are used to represent data applicable in science, engineering, data-science, and machine learning. By re-representing the data (i.e., as the eigen vectors and values of a matrix) we can more easily understand and process the data. This re-representation allows us to solve problems that would be difficult, time-consuming, or impossible to solve using other representations.</p>
+<p>Matrices are used to represent data applicable in science, engineering, data-science, and machine learning. By re-representing the data (i.e., as the eigen vectors and eigen values of a matrix) we can more easily understand and process the data. This re-representation allows us to solve problems that would be difficult, time-consuming, or impossible to solve using other representations.</p>
 <p><br></p>
 </div>
 <div id="r-code" class="section level2">
