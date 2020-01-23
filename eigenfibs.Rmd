@@ -195,8 +195,8 @@ We can now combine a few of these ideas to very simply compute any Fibonacci num
 The following will compute any Fibonacci number automatically!
 
 $$\begin{bmatrix}
-fib^{n+1}\\
-fib^{n+2}
+fib_{n+1}\\
+fib_{n+2}
 \end{bmatrix}=\begin{bmatrix}
 0.5257311 & -0.8506508\\
 0.8506508 & 0.5257311
@@ -214,8 +214,8 @@ fib^{n+2}
 As an example, the following will compute the 51^st^ and 52^st^ Fibonacci numbers that we computed before with only a handful of matrix operations (compared to the 50+ matrix operations without using the eigendecomposition of the matrix **A**):
 
 $$\begin{bmatrix}
-fib^{51}\\
-fib^{52}
+fib_{51}\\
+fib_{52}
 \end{bmatrix}=\begin{bmatrix}
 0.5257311 & -0.8506508\\
 0.8506508 & 0.5257311
