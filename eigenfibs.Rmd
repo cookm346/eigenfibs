@@ -28,7 +28,7 @@ where *x~i~* is the *i^th^* Fibonacci number, and *x~i-1~* and *x~i-2~* are the 
 
 It is simple to compute the Fibonacci numbers by hand (or to write a computer program to do it). However, to compute a given Fibonacci number, these methods require computing all the previous numbers in the sequence.
 
-I will present a well-known method of using linear algebra for computing any given Fibonacci number in the sequence automatiucally, without having to generate the sequence leading up to that number.
+I will present a well-known method of using linear algebra for computing any given Fibonacci number in the sequence automatically, without having to generate the sequence leading up to that number.
 
 In other words, can we, in a single step, compute the 50^th^ Fibonacci Number?
 
@@ -112,7 +112,7 @@ $$\begin{bmatrix}
 0 & 1\\
 1 & 1
 \end{bmatrix}^3\begin{bmatrix}
-1\\
+0\\
 1
 \end{bmatrix}=\begin{bmatrix}
 2\\
@@ -129,7 +129,7 @@ $$\begin{bmatrix}
 0 & 1\\
 1 & 1
 \end{bmatrix}^{50}\begin{bmatrix}
-1\\
+0\\
 1
 \end{bmatrix}=\begin{bmatrix}
 12586269025\\
